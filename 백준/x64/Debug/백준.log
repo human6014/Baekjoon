@@ -1,3 +1,0 @@
-﻿  미로 탐색.cpp
-C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\백준\미로 탐색.cpp(49,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  백준.vcxproj -> C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\백준\x64\Debug\2178.exe
