@@ -11,3 +11,9 @@
 #include <unordered_set>
 using namespace std;
 
+int N;
+
+int main() {
+	cin >> N;
+
+}
