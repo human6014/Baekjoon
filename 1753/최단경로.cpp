@@ -25,11 +25,11 @@ void Dijkstra(int start) {
 		//if (dist[nowNode] > nowDist)continue;
 
 		for (int i = 0; i < node[nowNode].size(); i++) {
-			int newDist = node[nowNode][i].first;
+			int newNode = node[nowNode][i].first;
 
-			if (dist[newDist] > nowDist + node[nowNode][i].second) {
-				dist[newDist] = nowDist + node[nowNode][i].second;
-				pq.push(make_pair(dist[newDist], newDist));
+			if (dist[newNode] > nowDist + node[nowNode][i].second) {
+				dist[newNode] = nowDist + node[nowNode][i].second;
+				pq.push(make_pair(dist[newNode], newNode));
 			}
 		}
 	}
