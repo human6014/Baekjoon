@@ -1,0 +1,7 @@
+﻿  A → B.cpp
+C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\16953\A → B.cpp(14,23): warning C4244: '=': '_Ty'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=__int64
+          ]
+  16953.vcxproj -> C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\백준\x64\Debug\16953.exe
