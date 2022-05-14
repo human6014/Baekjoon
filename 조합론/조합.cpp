@@ -81,8 +81,8 @@ int main() {
 		for (int i = 0; i < K; i++) {
 			cin >> numbers[i];
 		}
-		//Combination(0, 0);
-		Permutation(0);
+		Combination(0, 0);
+		//Permutation(0);
 		cout << "\n";
 	}
 }
