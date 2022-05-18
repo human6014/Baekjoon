@@ -1,0 +1,3 @@
+﻿  강의실 배정.cpp
+C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\11000\강의실 배정.cpp(73,7): warning C4101: 'isIn' :참조되지 않은 지역 변수입니다.
+  11000.vcxproj -> C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\백준\x64\Debug\11000.exe
