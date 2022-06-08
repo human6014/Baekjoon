@@ -16,4 +16,3 @@ int N;
 int main() {
 	cin >> N;
 }
-
