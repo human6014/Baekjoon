@@ -6,6 +6,7 @@ bool alphabet[26];
 int N, K;
 int answer=0;
 vector<string>text;
+vector<char> letter;
 void Combination(int index, int length) {
 	if (length == K) {
 
@@ -24,12 +25,12 @@ void Combination(int index, int length) {
 		answer = max(answer, count);
 		
 
-		/*
+		
 		for (int i = 0; i < 26; i++) {
 			if(alphabet[i])cout << char(i + 97) << " ";
 		}
 		cout << "\n";
-		*/
+		
 		return;
 	}
 	for (int i = index; i < 26; i++) {
