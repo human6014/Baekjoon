@@ -1,4 +1,0 @@
-﻿  벽 부수고 이동하기.cpp
-C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\2206\벽 부수고 이동하기.cpp(120,10): warning C4477: 'scanf' : 서식 문자열 '%1d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'bool *'입니다.
-C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\2206\벽 부수고 이동하기.cpp(120,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  2206.vcxproj -> C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\백준\x64\Debug\2206.exe

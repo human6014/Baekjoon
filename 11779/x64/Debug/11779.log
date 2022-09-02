@@ -1,3 +1,0 @@
-﻿  최소비용 구하기 2.cpp
-C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\11779\최소비용 구하기 2.cpp(59,2): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  11779.vcxproj -> C:\Users\human\OneDrive\바탕 화면\개인 연습용\백준\Baekjoon\백준\x64\Debug\11779.exe

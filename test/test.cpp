@@ -1,68 +1,67 @@
+
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <cmath>
-#include <string>
 #include <queue>
-#include <stack>
-#include <deque>
-#include <map>
-#include <set>
-#include <unordered_map>
-#include <unordered_set>
 using namespace std;
-/*
+
 int N;
-vector<int> base;
-vector<int> pr;
-void Comb(int depth) {
-	if (depth == N) {
-		for (int i = 0; i < pr.size(); i++) {
-			cout << pr[i] <<" ";
-		}
-		cout << "\n";
-		return;
+struct compare {
+	bool operator()(pair<int, int> a, pair<int, int> b) {
+		if (a.first == b.first) return a.second < b.second;
+		return a.first > b.first;
 	}
-	else {
-		pr.push_back(base[depth]);
-		Comb(depth + 1);
-		pr.pop_back();
-		Comb(depth + 1);
-	}
-}
+};
 int main() {
 	cin >> N;
-	base.resize(N);
-	for (int i = 0; i < N; i++) {
-		cin >> base[i];
-	}
-	Comb(0);
-}
-*/
 
-int vecSize, tempAnswer;
-unordered_map<string, int> clotheses;
-vector<int> tempVector;
-void Combination(int index, int depth) {
-	if (depth == vecSize) {
-		tempAnswer++;
-		return;
-	}
-	for (auto i : clotheses) {
-
-	}
-	return;
-}
-int solution(vector<vector<string>> clothes) {
+	int maxTime = 0;
+	int time = 1;
 	int answer = 0;
-	vecSize = clothes.size();
-	for (int i = 0; i < clothes.size(); i++) {
-		clotheses[clothes[i][1]]++;
+	int first, second;
+	priority_queue<pair<int, int>, vector<pair<int, int>>, compare> pq;
+	for (int i = 0; i < N; i++) {
+		cin >> first >> second;
+		maxTime = max(maxTime, first);
+		pq.push({ first , second });
 	}
-	Combination(0, 0);
-	return answer;
+
+	int frontFirst, frontSecond;
+	while (!pq.empty() && time <= maxTime) {
+		int frontFirst = pq.top().first;
+		int frontSecond = pq.top().second;
+		//std::cout << pq.top().first << " " << pq.top().second << "\n";
+		
+		if (time <= frontFirst) {
+			answer += frontSecond;
+			time++;
+		}
+		pq.pop();
+	}
+	cout << answer;
 }
-int main() {
-	vector<vector<string>>clothese = { {"yellowhat", "headgear"},{"bluesunglasses", "eyewear"},{"green_turban", "headgear"} };
-	solution(clothese);
-}
+/*
+7
+1 9
+1 100
+2 300
+2 99
+3 100
+5 100
+5 999
+
+ : 1599
+
+3
+3 5
+3 4
+1 1
+ : 10
+
+5
+3 1
+3 1
+3 1
+4 100
+4 100
+ : 202
+*/
